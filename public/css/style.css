@@ -1,0 +1,164 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body, html{
+	background-color: ;
+	color: white;
+	height: 100%;
+}
+
+/*nav---------------------------*/
+
+.nav-item{
+	padding: 10px;
+}
+
+/*color-------------------------*/
+
+.bg-home{
+	background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/home-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bg-navblue{
+	background-color: rgba(7,34,61,0.9);
+}
+
+.bg-blue{
+	background-color: #07223D;
+	opacity: 0.9;
+	transition: 0.1s
+}
+
+.bg-blue:hover{
+	opacity: 1;
+}
+
+.bg-footer{
+	background-color: #07223D;
+}
+
+.bg-grey{
+	background-color: rgb(220,220,220,0.5);
+	transition: 0.1s
+}
+
+.bg-grey:hover{
+	background-color: rgb(220,220,220,1);
+}
+
+.bg-transparent{
+	background-color:rgba(0,0,0,0);
+}
+
+.border-transparent{
+	border: none;
+}
+
+.cardhover{
+	background-color: rgb(220,220,220,0);
+	transition: 0.1s
+}
+
+.cardhover:hover{
+	background-color: rgb(220,220,220,0.3);
+}
+
+
+.txt-orange {color: #FF8C00;}
+.txt-blue {color: #6495ED;}
+.txt-cyan {color: #48D1CC;}
+.txt-red {color: #FA8072;}
+.txt-gold {color: #FFD700;}
+.txt-black {color: #708090;}
+.txt-purple {color: #9370DB;}
+.txt-grey {color: #A9A9A9;}
+
+.btn-talk a{
+	color:white;
+}
+
+.btn-talk a:hover{
+	color:white;
+	text-decoration: none;
+}
+
+.footer a{
+	color:white;
+}
+
+.footer a:hover{
+	color:white;
+	text-decoration: none;
+}
+
+/*text------------------------*/
+
+.title{
+	font-size: 60px;
+}
+
+.quote{
+	color: #A9A9A9;
+	transition: 0.2s;
+}
+
+.quote:hover{
+	color:white;
+}
+
+.speakertitle{
+	font-size: 60px;
+}
+
+.jumbotron{
+	padding: 0;
+}
+
+/*map------------------------*/
+
+.map-responsive{
+    overflow:hidden;
+    position:relative;
+}
+
+/*button-----------------------*/
+
+.btn-download a{
+	color:white;
+}
+
+.btn-download a:hover{
+	color:white;
+	text-decoration: none;
+}
+
+.btn-download:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f019";
+   display: inline-block;
+   font-weight: 900;
+}
+
+/*countdown---------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
