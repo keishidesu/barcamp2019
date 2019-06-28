@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 
 Route::resource('proposedtalks' , 'PostsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
