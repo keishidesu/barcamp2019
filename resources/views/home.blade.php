@@ -20,7 +20,7 @@
           </div>
           <div class="row d-none d-md-block">
             <div class="jumbotron bg-transparent">
-              <div class="text-center countdown d-sm-none d-md-block">
+              <div class="text-center txt-cyan countdown d-sm-none d-md-block">
                 <ul>
                   <li><span id="days"></span>days</li>
                   <li><span id="hours"></span>Hours</li>
@@ -228,6 +228,10 @@
       </div>
     </div>
   </div>
+</div>
+<!-- carousel -->
+<div id="carousel">
+
 </div>
 <!-- FAQ -->
 <div id="faq">
