@@ -15,8 +15,11 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/proposedtalks', function () {
+    return view('pages.proposedtalks');
+});
 
-Route::resource('proposedtalks' , 'PostsController');
+Route::resource('post' , 'PostsController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

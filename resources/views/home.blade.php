@@ -2,8 +2,6 @@
 
 @section('title')
 
-    @lang('about.title')
-
 @endsection
 
 @section('content')
@@ -174,11 +172,12 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button> 
+                <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">Submit</button> 
                 <a href="/proposedtalks" class="btn btn-outline-info btn-lg btn-block" role="button" aria-disabled="true">View Proposed Talks</a>
               </div>
             </div>
-          </form> 
+            <p><span id="confirmation">This is where the confirmation message will appear after submission.</span></p>
+          </form>
         </div>
       </div>
     </div>
@@ -388,7 +387,7 @@
       <div class="row justify-content-center mt-4">
         <div class="col-md-4 col-sm-12">
           <button type="button" class="btn btn-lg btn-block bg-blue border-transparent text-white btn-download">
-            <a href="/SponsorhipProposal_BarCampCyberjaya.pdf" download> Sponsorship Proposal</a></button>
+            <a href="/pdf/sponsorshipproposal" download> Sponsorship Proposal</a></button>
         </div>
       </div>
       <div class="row">
