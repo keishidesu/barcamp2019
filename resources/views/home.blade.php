@@ -42,16 +42,9 @@
                   distance = countDown - now;
 
               document.getElementById('days').innerText = Math.floor(distance / (day)),
-                document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-              
-              //do something later when date is reached
-              //if (distance < 0) {
-              //  clearInterval(x);
-              //  'IT'S MY BIRTHDAY!;
-              //}
-
+              document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+              document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+              document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second)
         }, second)
       </script>
       <div class="row mt-2 d-none d-md-block">
@@ -155,19 +148,43 @@
       <div class="row mt-4">
         <div class="col-sm-12 col-md-5">
           <h1 class="speakertitle pt-3">We Are Calling for Speakers</h1>
+          <br>
+          <p class="font-italic">Come share your awesome ideas with us. We welcome all topics related to technology and the web. Refer to our FAQ for more details about submitting a talk.</p>
         </div>
         <div class="col-sm-12 col-md-7">
           <form class="mt-3 pb-3">
             <div class="form-group">
               <label for="exampleFormControlInput1">How Should We Address You?</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name"required>
+              <input type="text" class="form-control" id="nameinput" placeholder="Name"required>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Describe yourself.</label>
+              <input type="text" class="form-control" id="aboutinput" placeholder="About You"required>
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1">How Do We Contact You?</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contact"required>
+              <input type="email" class="form-control" id="emailinput" placeholder="Email"required>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">What Will You Be Talking About?</label>
+              <label for="exampleFormControlInput1">Title of Your Talk</label>
+              <input type="text" class="form-control" id="titleinput" placeholder="Title"required>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Talk Category</label>
+              <select class="form-control" id="categoryinput">
+                <option>Machine Learning</option>
+                <option>Web</option>
+                <option>AR/MR/VR</option>
+                <option>Blockchain</option>
+                <option>Cloud</option>
+                <option>Mobile Application</option>
+                <option>DevOps</option>
+                <option>IoT</option>
+                <option>Others</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Describe What Will You Be Talking About?</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Describe your topic"required></textarea>
             </div>
             <div class="row">
