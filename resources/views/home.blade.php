@@ -7,8 +7,8 @@
 @section('content')
 <!-- Home -->
 <div id="home">
-  <div class="bg-home">
-      <div class="row jumbotron justify-content-center text-center p-2 bg-transparent">
+  <div class="p-5 bg-home">
+      <div class="row jumbotron justify-content-center text-center mb-4 bg-transparent">
           <div class="col-12">
               <h1 class="pt-5 title text-center">
                   BARCAMP CYBERJAYA<br>
