@@ -176,7 +176,6 @@
                 <a href="/proposedtalks" class="btn btn-outline-info btn-lg btn-block" role="button" aria-disabled="true">View Proposed Talks</a>
               </div>
             </div>
-            <p><span id="confirmation">This is where the confirmation message will appear after submission.</span></p>
           </form>
         </div>
       </div>
