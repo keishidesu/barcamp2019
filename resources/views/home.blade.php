@@ -17,9 +17,9 @@
     {
       "@context": "http://schema.org",
       "@type": "Event",
-      "name": "BarCamp Cyberjaya 2017",
-      "startDate" : "2017-08-05T09:00+0800",
-      "endDate" : "2017-08-05T18:00+0800",
+      "name": "BarCamp Cyberjaya 2019",
+      "startDate" : "2019-08-17T09:00+0800",
+      "endDate" : "2019-08-17T18:00+0800",
       "url" : "https://www.barcampcyberjaya.org/",
       "location" : {
         "@type" : "Place",
