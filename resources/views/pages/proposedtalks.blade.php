@@ -37,110 +37,20 @@
 <body>
 	<div class="container">
 		<div class="row mt-5 mb-5">
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">Production ready ML models with FastAPI and docker</h5>
-				    <p class="card-text">Deploying machine learning models fast and easy.</p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Fares Hasan</footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter">0</span></button>
-				  </div>
+			@foreach ($talks as $talk)
+				<div class="talks" data-postid="{{ $talk->id }}">
+					<div class="col-12 mt-3">
+						<div class="card">
+						  <div class="card-body">
+						    <h5 class="card-title">{{ $talk->title }}</h5>
+						    <p class="card-text">{{ $talk->body }}</p>
+						    <a href = "#">Like</a>
+						    <hr>
+						  </div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">IOT for kids health and safety</h5>
-				    <p class="card-text">Present on IOT wearable device idea for kids health and safety.</p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Jegandran Balakrishnan</footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-2" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-2">0</span></button>
-				  </div>
-				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">Utilise Mobile Application for Operation & HR Management Solution</h5>
-				    <p class="card-text">HAUZ is a upcoming disruptive technology company focuses on Operation & HR Management. With zero asset investment & SAAS Business Model, HAUZ as shown that mobile application is the next wave of technology where startups should be leveraging on. </p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Di-Yan Ho</footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-3" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-3">0</span></button>
-				  </div>
-				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">What makes a great pitch deck? </h5>
-				    <p class="card-text">As the corporate planning executive for HAUZ, Niba has contributed lots of time researching and designing pitch deck slides for HAUZ and others. As the subject matter expert in designing and writing, Niba plays a very big role in HAUZ and would like to share brief presentation on how to capture investor attention. </p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Niba Batool </footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-4" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-4">0</span></button>
-				  </div>
-				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">Digitalising SME Through Online : The Challenges vs Strategies </h5>
-				    <p class="card-text">Helping SME to understand Pn how important to be Digitalised in all parts of the business </p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Abd Azharee Bin Abdul Wahid </footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-5" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-5">0</span></button>
-				  </div>
-				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">A career journey of an IT Architect </h5>
-				    <p class="card-text">I will share my experience of as a technical person going through my IT Architect journey, getting into  jobs as Software Architect to an Enterprise Architect.</p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Chris Par</footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-6" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-6">0</span></button>
-				  </div>
-				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">October CMS -- The open semi flat-file CMS.</h5>
-				    <p class="card-text">Some casual introduction to October CMS.</p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">NICOLAS YIP Z. W.</footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-7" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-7">0</span></button>
-				  </div>
-				</div>
-			</div>
-			<div class="col-6 mt-3">
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">Cyber Consumerism</h5>
-				    <p class="card-text">Redefining cyber consumer towards IR 4.0</p>
-				    <blockquote class="blockquote">
-					  	<footer class="blockquote-footer">Mohamad Sirajuddin Jalil</footer>
-					</blockquote>
-				    <input class="btn btn-primary ml-2" id="toggle-button-8" type="button" value="Vote!" style="background-color: #642c6a">
-                	<button type="button" class="btn btn-outline-success ml-2" ><span id="toggle-counter-8">0</span></button>
-				  </div>
-				</div>
-			</div>
+			@endforeach
 		</div>
 	</div>
 </body>
