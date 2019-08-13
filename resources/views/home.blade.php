@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   <link href="img/favicon.ico" rel="shortcut icon">
   <meta charset="UTF-8">
-  <meta content="BarCamp Cyberjaya 2017" property="og:title">
+  <meta content="BarCamp Cyberjaya 2019" property="og:title">
   <meta content="https://www.barcampcyberjaya.org/" property="og:url">
   <meta content="https://www.barcampcyberjaya.org/img/opengraphimg.jpg" property="og:image">
   <meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2017." property="og:description">
