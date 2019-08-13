@@ -30,7 +30,7 @@
 							@php
 								$translate = 'proposedtalks.topic_'.$i;
 							@endphp
-							<h3 class="text-left text-dark">@lang($translate)</h3>
+							<h3 class="text-left text-dark">@lang($translate)</h3>x
 							@php
 								$translate = 'proposedtalks.speaker_'.$i;
 							@endphp
