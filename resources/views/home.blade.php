@@ -540,7 +540,7 @@
         <p class="success-message-speaker"></p>
         <p class="small center">View proposed talks 👇</p>
       </form>
-      <a href="/login" target="_blank" rel="noopener"><button class="btn btn-light btn-sm">View proposed topics</button></a>
+      <a href="/proposedtalks" target="_blank" rel="noopener"><button class="btn btn-light btn-sm">View proposed topics</button></a>
     </div>
   </div>
 

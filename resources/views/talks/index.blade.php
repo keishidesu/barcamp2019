@@ -37,7 +37,7 @@
 <body>
 	<div class="container">
 		<div class="row mt-5 mb-5">
-			<div class="col-md-6 col-sm-12 ">
+			<div class="col-md-6 col-sm-12">
 				@foreach ($talks as $talk)
 					<div class="talks" data-talkid="{{ $talk->id }}">
 						<div class="card mt-3">
