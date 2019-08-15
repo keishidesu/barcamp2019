@@ -35,6 +35,7 @@
 </style>
 
 <body>
+<div style="background-image: url(/img/Asset\ 3.png);">
 	<div class="container">
 		<div class="row mt-5 mb-5">
 			<div class="col-md-6 col-sm-12">
@@ -45,7 +46,7 @@
 						    <h5 class="card-title">{{ $talk->title }}</h5>
 						    <p class="card-text">{{ $talk->body }}</p>
 						    <hr>
-						    <a href = "#"><button class="btn btn-primary like" style="background-color: #642c6a; border-color: #642c6a';">Vote!</button></a>
+						    <a href = "#"><button class="btn btn-primary like" style="background-color: #642c6a; border-color: #642c6a;">Vote!</button></a>
 						  </div>
 						</div>
 					</div>
@@ -53,6 +54,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 
 
