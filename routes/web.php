@@ -19,10 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/proposedtalks', function () {
-    return view('TalkController@index');
-})->middleware('auth');
+// Route::get('/proposedtalks', function () {
+//     return view('TalkController@index');
+// })->middleware('auth');
 
-// Route::get('/proposedtalks', 'TalkController@index')->middleware('auth');
+Route::get('/proposedtalks', 'TalkController@index')->middleware('auth');
 
 Route::post('/vote', 'TalkController@voteTalk')->name('vote');
