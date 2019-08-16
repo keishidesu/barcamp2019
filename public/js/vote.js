@@ -4,7 +4,7 @@ var talkId = 0;
 $('.vote').on('click', function(event){
 
 	event.preventDefault();
-	// talkId = event.target.parentNode.parentNode.dataset['talkId'];
+
 
 	talkId = event.target.parentNode.parentNode.parentNode.parentNode.dataset['talkid'];
 	console.log(event.target.parentNode.parentNode.parentNode.parentNode);

@@ -58,28 +58,19 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1 class="mt-5 text-center text-white">PROPOSED TALKS</h1>
-		<div class="row mt-2 mb-5">
-			<div class="col-12 col-sm-12">
+		<div class="row mt-5 mb-5">
+			<div class="col-md-6 col-sm-12">
 				@foreach ($talks as $talk)
-					<div class="talks" id="test" data-talkid="{{ $talk->id }}">
+					<div class="talks" id="talkid" data-talkid="{{ $talk['id'] }}">
 						<div class="card mt-3">
-						  <div class="card-body">
-						    <h5 class="card-title">{{ $talk->title }}</h5>
-						    <p class="card-text">{{ $talk->body }}</p>
-						    <hr>
-						    <div class="interaction">
-						    	@if (Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1)
-						    		<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">You voted for this talk</a>
-						    	@else
-						    		<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">Vote</a>
-						    	@endif
-						    </div>
-<!-- 						    <div class="interaction">
-						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1 ? 'You voted for this talk' : 'Vote' : 'Vote'}}</a> 
-						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 0 ? 'You downvoted this talk' : 'Downvote' : 'Downvote'}}</a>
-						    </div> -->
-						  </div>
+						  	<div class="card-body">
+						    	<h5 class="card-title">{{ $talk['title'] }}</h5>
+						    	<p class="card-text">{{ $talk['body'] }}</p>
+						    	<hr>
+						    	<div class="interaction">
+						    		<a href ="#" class="vote" id="vote" data-vote="{{$talk['vote']}}">Vote</a>
+						    	</div>
+						  	</div>
 						</div>
 					</div>
 				@endforeach
@@ -94,6 +85,14 @@
 <script type="text/javascript">
 var token = '{{ Session::token() }}';
 var urlVote = '{{ route('vote') }}';
+
+$( document ).ready(function() {
+    vote = $('#vote').data('vote');
+    if (vote == 1) {
+        $('#vote').html('You have voted');
+    }
+});
+
 </script>
 
 
