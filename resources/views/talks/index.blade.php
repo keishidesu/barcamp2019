@@ -69,7 +69,7 @@
 						    	<p class="card-text">{{ $talk['body'] }}</p>
 						    	<hr>
 						    	<div class="interaction">
-						    		<a href ="#" class="btn btn-primary vote" style="background-color: #f0e6ff; border-color: #f0e6ff;" id="vote" data-vote="{{$talk['vote']}}">Vote</a>
+						    		<a href ="#" class="btn btn-primary vote" style="background-color: rgba(100, 44, 106,1); border-color: rgba(100, 44, 106,1);" id="vote" data-vote="{{$talk['vote']}}">Vote</a>
 						    	</div>
 						  	</div>
 						</div>
