@@ -62,7 +62,7 @@
 		<div class="row mt-2 mb-5">
 			<div class="col-12 col-sm-12">
 				@foreach ($talks as $talk)
-					<div class="talks" data-talkid="{{ $talk->talkid }}">
+					<div class="talks" id="test" data-talkid="{{ $talk->id }}">
 						<div class="card mt-3">
 						  <div class="card-body">
 						    <h5 class="card-title">{{ $talk->title }}</h5>
@@ -86,7 +86,7 @@
 
 <script type="text/javascript">
 var token = '{{ Session::token() }}';
-var urlVote = '{{ route('vote') }}'
+var urlVote = '{{ route('vote') }}';
 </script>
 
 
