@@ -86,12 +86,12 @@
 var token = '{{ Session::token() }}';
 var urlVote = '{{ route('vote') }}';
 
-$( document ).ready(function() {
-    vote = $('#vote').data('vote');
-    if (vote == 1) {
-        $('#vote').html('You have voted');
-    }
-});
+// $( document ).ready(function() {
+//     vote = $('#vote').data('vote');
+//     if (vote == 1) {
+//         $('#vote').html('You have voted');
+//     }
+// });
 
 </script>
 
