@@ -69,9 +69,16 @@
 						    <p class="card-text">{{ $talk->body }}</p>
 						    <hr>
 						    <div class="interaction">
+						    	@if (Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1)
+						    		<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">You voted for this talk</a>
+						    	@else
+						    		<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">Vote</a>
+						    	@endif
+						    </div>
+<!-- 						    <div class="interaction">
 						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1 ? 'You voted for this talk' : 'Vote' : 'Vote'}}</a> 
 						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 0 ? 'You downvoted this talk' : 'Downvote' : 'Downvote'}}</a>
-						    </div>
+						    </div> -->
 						  </div>
 						</div>
 					</div>

@@ -1,5 +1,5 @@
 
-var talkId = 1;
+var talkId = 0;
 
 $('.vote').on('click', function(event){
 
