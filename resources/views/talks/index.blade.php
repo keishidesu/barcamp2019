@@ -58,8 +58,8 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h3 class="text-white text-center">PROPOSED TALKS</h3>
-		<div class="row mt-5 mb-5">
+		<h2 class="text-white text-center mt-3">PROPOSED TALKS</h2>
+		<div class="row mt-2 mb-5">
 			<div class="col-12">
 				@foreach ($talks as $talk)
 					<div class="talks" id="talkid" data-talkid="{{ $talk['id'] }}">
