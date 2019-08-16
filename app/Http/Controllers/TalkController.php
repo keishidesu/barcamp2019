@@ -14,9 +14,25 @@ class TalkController extends Controller
 {
     public function index(){
     	$talks = Talk::orderBy('created_at','desc')-> get();
+        $talksArray = $talks->toArray();
 
+        $talks = [];
+        foreach ($talksArray as $talkArray){
+            $talkID = $talkArray['id'];
+            $vote = Vote::where('talk_id', $talkID)->value('vote');
 
-    	return view('talks.index',['talks'=> $talks]);
+            if(!empty($vote)) {
+
+                $vote = ['vote' => $vote];
+                $talks [] = array_merge($talkArray, $vote);
+
+            } else {
+                $vote = ['vote' => 0];
+                $talks [] = array_merge($talkArray, $vote);
+            }
+        }
+
+    	return view('talks.index', compact('talks'));
     }
 
     public function voteTalk(Request $request){
