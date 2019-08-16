@@ -3,7 +3,7 @@
 <head>
 
 	<!--title-->
-	<title>Proposed topics</title>
+	<title>Barcamp Cyberjaya | Proposed topics</title>
 
 	<!--Metas-->
 	<meta charset="utf-8">
@@ -28,31 +28,49 @@
 
 
 </head>
+
 <style>
 	.card:hover{
-		background-color:  #f0e6ff;
+		background-color:  rgba(255,255,255,1);
 	}
 
 	.card{
 		border-color: #642c6a;
+		background-color: rgba(230,230,250,0.9) ;
 	}
+
+	body {
+  	background: url(/img/Asset\ 3.png) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+}
 
 </style>
 
 <body>
+	<nav class="navbar navbar-expand-md navbar-dark nav-shadow" style="background-color: rgba(100, 44, 106,0.9)">
+		<div class="" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<a href="/" class="btn btn-outline-light">HOME</a>
+			</ul>
+		</div>
+	</nav>
 	<div class="container">
-		<div class="row mt-5 mb-5">
-			<div class="col-md-6 col-sm-12">
+		<h1 class="mt-5 text-center text-white">PROPOSED TALKS</h1>
+		<div class="row mt-2 mb-5">
+			<div class="col-12 col-sm-12">
 				@foreach ($talks as $talk)
-					<div class="talks" data-talkid="{{ $talk->id }}">
+					<div class="talks" data-talkid="{{ $talk->talkid }}">
 						<div class="card mt-3">
 						  <div class="card-body">
 						    <h5 class="card-title">{{ $talk->title }}</h5>
 						    <p class="card-text">{{ $talk->body }}</p>
 						    <hr>
 						    <div class="interaction">
-						    	<a href ="#" class="vote">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1 ? 'You voted for this talk' : 'Vote' : 'Vote'}}</a> |
-						    	<a href ="#" class="vote">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 0 ? 'You downvoted this talk' : 'Downvote' : 'Downvote'}}</a>
+						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1 ? 'You voted for this talk' : 'Vote' : 'Vote'}}</a> 
+						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first() ? Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 0 ? 'You downvoted this talk' : 'Downvote' : 'Downvote'}}</a>
 						    </div>
 						  </div>
 						</div>
