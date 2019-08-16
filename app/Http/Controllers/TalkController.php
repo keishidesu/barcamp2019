@@ -49,7 +49,6 @@ class TalkController extends Controller
     	$vote->user_id = $user->id;
     	$vote->talk_id = $talk->id;
 
-
     	if ($update){
     		$vote->update();
     	} else{
