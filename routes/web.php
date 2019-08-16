@@ -23,6 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 //     return view('TalkController@index');
 // })->middleware('auth');
 
-Route::get('/proposedtalks', 'TalkController@index');
+Route::get('/proposedtalks', 'TalkController@index')->middleware('auth');
 
 Route::post('/vote', 'TalkController@voteTalk')->name('vote');
