@@ -58,9 +58,9 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h3 class="text-white text-center">PROPOSED TOPICS</h3>
+		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
 		<div class="row mt-2 mb-5">
-			<div class="col-md-6 col-sm-12">
+			<div class="col-12">
 				@foreach ($talks as $talk)
 					<div class="talks" id="talkid" data-talkid="{{ $talk['id'] }}">
 						<div class="card mt-3">
@@ -69,7 +69,7 @@
 						    <p class="card-text">{{ $talk['body'] }}</p>
 						    <hr>
 						    <div class="interaction">
-						    	<a href ="#" class="vote" id="vote" data-vote="{{$talk['vote']}}">Vote</a>
+						    	<a href ="#" class="btn btn-primary vote" style="background-color: rgba(100, 44, 106,0.9); border-color:rgba(100, 44, 106,0.9);"  id="vote" data-vote="{{$talk['vote']}}">Vote</a>
 						    </div>
 						  </div>
 						</div>
