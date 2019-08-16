@@ -15,8 +15,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-
-Route::resource('post' , 'PostsController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -26,3 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 // })->middleware('auth');
 
 Route::get('/proposedtalks', 'TalkController@index');
+Route::post('/vote', 'TalkController@voteTalk')->name('vote');

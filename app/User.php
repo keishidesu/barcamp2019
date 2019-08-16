@@ -37,10 +37,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function likes(){
-        return $this->hasMany('App\Like');
+    public function votes(){
+        return $this->hasMany('App\Vote');
     }
-    public function posts(){
-        return $this->hasMany('App\Post');
+    public function talk(){
+        return $this->hasMany('App\Talk');
     }
 }

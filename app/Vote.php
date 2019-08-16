@@ -4,12 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Talk extends Model
+class Vote extends Model
 {
     public function user(){
     	return $this->belongsTo('App\User');
     }
-    public function votes(){
-    	return $this->belongsTo('App\Vote');
+
+    public function talk(){
+    	return $this->belongsTo('App\Talk');
     }
 }
