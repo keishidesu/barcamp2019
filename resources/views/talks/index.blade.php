@@ -72,8 +72,8 @@
 					    		<a href ="#" class="btn btn-primary vote" id="vote" style="background-color:#642c6a; border-color:#642c6a">Vote</a>
 						    </div>
 						    <div class="interaction">
-						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{  Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1 ? 'You voted for this talk' : 'Vote'}}</a> 
-						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 0 ? 'You downvoted this talk' : 'Downvote'}}</a>
+<!-- 						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{  Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 1 ? 'You voted for this talk' : 'Vote'}}</a> 
+						    	<a href ="#" class="btn btn-primary vote" style="background-color:#642c6a; border-color:#642c6a">{{ Auth::user()->votes()->where('talk_id', $talk->id)->first()->vote == 0 ? 'You downvoted this talk' : 'Downvote'}}</a> -->
 						    </div>
 						  </div>
 						</div>
