@@ -11,9 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');tf
-// });
+Route::get('/', function () {
+    return view('homee');
+});
 
 Auth::routes();
 
@@ -26,6 +26,5 @@ Auth::routes();
 Route::get('/proposedtalks', 'TalkController@index')->middleware('auth');
 
 Route::post('/vote', 'TalkController@voteTalk')->name('vote');
-
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

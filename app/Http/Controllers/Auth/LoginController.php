@@ -20,9 +20,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers{
-        logout as performLogout;
-    }
+    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login.
@@ -73,12 +71,6 @@ class LoginController extends Controller
             $newUser->save();
             auth()->login($newUser, true);
         }
-        return redirect()->to('/proposedtalks'); 
+        return redirect()->to('/login'); 
     }
-
-    public function logout(Request $request)
-{
-    $this->performLogout($request);
-    return redirect()->route('/login');
-}
 }
