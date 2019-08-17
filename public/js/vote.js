@@ -21,6 +21,7 @@ $('.vote').on('click', function(event){
 	})
 	.done(function(res){
 		console.log(res)
+		// ok it is here
 		if (res == false) {
 			console.log("should not change next, show warning ")
 		}
@@ -33,5 +34,8 @@ $('.vote').on('click', function(event){
 			event.target.previousElementSibling.innerText = 'Vote';
 		}
 
-	});
+	})
+	.catch(function(err){
+		console.log(err);
+	})
 });
