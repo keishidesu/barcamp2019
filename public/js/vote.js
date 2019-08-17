@@ -31,6 +31,7 @@ $('.vote').on('click', function(event){
 
 	})
 	.fail(function(err){
-		console.log(err);
+		// console.log(err);
+		event.target.innerText = "Every participant are limit to 5 vote only"
 	})
 });
