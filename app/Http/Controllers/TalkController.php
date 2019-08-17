@@ -56,8 +56,8 @@ class TalkController extends Controller
     	$user = Auth::user();
 
         // do validation here
-        $voteCount = $user -> votes() -> count();
-        if($voteCount >= 5 ){
+        $voteCount = $user -> votes() -> get();
+        if(count($voteCount) >= 5 ){
             return false;
         }
 

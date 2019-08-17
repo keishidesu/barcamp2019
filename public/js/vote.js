@@ -7,8 +7,8 @@ $('.vote').on('click', function(event){
 
 
 	talkId = event.target.parentNode.parentNode.parentNode.parentNode.dataset['talkid'];
-	console.log(event.target.parentNode.parentNode.parentNode.parentNode);
-	console.log(talkId);
+	// console.log(event.target.parentNode.parentNode.parentNode.parentNode);
+	// console.log(talkId);
 	
 	var isVote = event.target.previousElementSibling == null;
 
