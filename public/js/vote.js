@@ -20,7 +20,7 @@ $('.vote').on('click', function(event){
 
 	})
 	.done(function(){
-		event.target.innerText = isVote ? event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' :
+		event.target.innerText = event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' ;
 		// event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
 		// here, the frontend issue
 
