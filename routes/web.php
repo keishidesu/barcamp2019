@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('talks.index');
+    return view('home');
 });
 
 Auth::routes();
