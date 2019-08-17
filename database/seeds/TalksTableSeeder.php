@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 use Illuminate\Database\Seeder;
 
@@ -18,3 +18,4 @@ class TalksTableSeeder extends Seeder
         ]);
     }
 }
+ -->
