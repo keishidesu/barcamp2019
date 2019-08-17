@@ -13,7 +13,12 @@ use Illuminate\Support\Facades\Session;
 class TalkController extends Controller
 {
     public function index(){
-    	$talks = Talk::orderBy('created_at','desc')-> get();
+        $user = Auth::user();
+    	$talks = Talk::orderBy('created_at','desc')
+            ->where('user_id', $user->id)
+            -> get();
+        // do a checking on user id here, i forget the syntax, can you write
+        //i also dk le how
         $talksArray = $talks->toArray();
 
         $talks = [];
