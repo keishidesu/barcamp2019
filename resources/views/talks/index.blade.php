@@ -53,7 +53,7 @@
 	<nav class="navbar navbar-expand-md navbar-dark nav-shadow" style="background-color: rgba(100, 44, 106,0.9)">
 		<div class="" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="pt-1">
+				<li>
 					<a href="/" class="btn btn-outline-light">HOME</a>
 				</li>
 				<li>
