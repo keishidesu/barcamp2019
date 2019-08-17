@@ -11,9 +11,13 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('');
-// });
+Route::get('/', function () {
+    return redirect('/login')
+});
+
+Route::get('/home', function () {
+    return redirect('/login')
+});
 
 Auth::routes();
 
