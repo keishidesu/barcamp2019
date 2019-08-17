@@ -21,13 +21,14 @@ $('.vote').on('click', function(event){
 	})
 	.done(function(){
 		event.target.innerText = isVote ? event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' :
-		event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
+		// event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
+		// here, the frontend issue
 
-		if(isVote){
-			event.target.nextElementSibling.innerText = 'Downvote';
-		} else{
-			event.target.previousElementSibling.innerText = 'Vote';
-		}
+		// if(isVote){
+		// 	event.target.nextElementSibling.innerText = 'Downvote';
+		// } else{
+		// 	event.target.previousElementSibling.innerText = 'Vote';
+		// }
 
 	})
 	.fail(function(err){

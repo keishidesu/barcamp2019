@@ -63,17 +63,17 @@ class TalkController extends Controller
         }
 
 
-    	$vote = $user -> votes()-> where('talk_id', $talk_id)->first();
-    	if ($vote){
-    		$already_vote = $vote->vote;
-    		$update = true;
-    		if ($already_vote == $is_vote){
-    			$vote->delete();
-    			return null;
-    		}
-    	} else{
+    	// $vote = $user -> votes()-> where('talk_id', $talk_id)->first();
+    	// if ($vote){
+    	// 	$already_vote = $vote->vote;
+    	// 	$update = true;
+    	// 	if ($already_vote == $is_vote){
+    	// 		$vote->delete(); // nd this devote
+    	// 		return null;
+    	// 	}
+    	// } else{
     		$vote = new Vote();
-    	}
+    	// }
 
 
     	$vote->vote = $is_vote;
