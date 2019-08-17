@@ -60,7 +60,8 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
+		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3><br>
+		<h5 class="text-white text-center text-italic mt-2">Each participant is limited to 5 votes only.</h5>
 		<div class="row mt-2 mb-5">
 			<div class="col-12">
 				@foreach ($talks as $talk)
