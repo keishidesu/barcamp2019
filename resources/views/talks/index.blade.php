@@ -54,6 +54,7 @@
 		<div class="" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<a href="/" class="btn btn-outline-light">HOME</a>
+				<a href="{{ url('/logout') }}" class="btn btn-outline-light">LOGOUT</a>
 			</ul>
 		</div>
 	</nav>

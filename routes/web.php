@@ -26,3 +26,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/proposedtalks', 'TalkController@index')->middleware('auth');
 
 Route::post('/vote', 'TalkController@voteTalk')->name('vote');
+
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
