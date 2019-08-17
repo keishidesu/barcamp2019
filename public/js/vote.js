@@ -21,7 +21,7 @@ $('.vote').on('click', function(event){
 	})
 	.done(function(){
 		event.target.innerText = isVote ? event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' :
-		// event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
+		event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
 
 		if(isVote){
 			event.target.nextElementSibling.innerText = 'Downvote';
@@ -32,6 +32,6 @@ $('.vote').on('click', function(event){
 	})
 	.fail(function(err){
 		// console.log(err);
-		event.target.innerText = "Every participant are limit to 5 vote only"
+		event.target.innerText = "Every participant is limited to 5 votes only"
 	})
 });
