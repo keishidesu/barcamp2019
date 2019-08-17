@@ -23,11 +23,11 @@ $('.vote').on('click', function(event){
 		event.target.innerText = isVote ? event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' :
 		// event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
 
-		// if(isVote){
-		// 	event.target.nextElementSibling.innerText = 'Downvote';
-		// } else{
-		// 	event.target.previousElementSibling.innerText = 'Vote';
-		// }
+		if(isVote){
+			event.target.nextElementSibling.innerText = 'Downvote';
+		} else{
+			event.target.previousElementSibling.innerText = 'Vote';
+		}
 
 	})
 	.fail(function(err){
