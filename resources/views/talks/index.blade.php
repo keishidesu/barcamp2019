@@ -53,8 +53,12 @@
 	<nav class="navbar navbar-expand-md navbar-dark nav-shadow" style="background-color: rgba(100, 44, 106,0.9)">
 		<div class="" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<a href="/" class="btn btn-outline-light">HOME</a>
-				<a href="{{ url('/logout') }}" class="btn btn-outline-light">LOGOUT</a>
+				<li>
+					<a href="/" class="btn btn-outline-light">HOME</a>
+				</li>
+				<li>
+					<a href="{{ url('/logout') }}" class="btn btn-outline-light">LOGOUT</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
