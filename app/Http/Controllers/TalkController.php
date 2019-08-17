@@ -14,9 +14,7 @@ class TalkController extends Controller
 {
     public function index(){
         $user = Auth::user();
-    	$talks = Talk::orderBy('created_at','desc')
-            ->where('user_id', $user->id)
-            -> get();
+    	$talks = Talk::orderBy('created_at','desc')-> get();
         // do a checking on user id here, i forget the syntax, can you write
         //i also dk le how
         $talksArray = $talks->toArray();
@@ -24,7 +22,10 @@ class TalkController extends Controller
         $talks = [];
         foreach ($talksArray as $talkArray){
             $talkID = $talkArray['id'];
-            $vote = Vote::where('talk_id', $talkID)->value('vote');
+            $vote = Vote::where('talk_id', $talkID)
+                ->where('user_id', $user->id)
+                ->value('vote');
+            // should be here wtf
 
             if(!empty($vote)) {
 
