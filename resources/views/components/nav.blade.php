@@ -8,21 +8,6 @@
 			<li class="nav-item">
 				<a class="nav-link py-md-0" href="/">HOME</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link py-md-0" href="#about">ABOUT US</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link py-md-0" href="#venue">VENUE</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link py-md-0" href="#sponsors">SPONSORS</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link py-md-0" href="/proposedtalks">PROPOSED TALKS</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link py-md-0" href="/speakers"></a>
-			</li>
 		</ul>
 	</div>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">

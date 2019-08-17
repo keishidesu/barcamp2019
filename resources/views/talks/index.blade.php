@@ -50,30 +50,24 @@
 </style>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: rgba(100, 44, 106,0.9)">
-            <div class="container">
-                <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon text-white"></span>
-                </button>
+	<nav class="navbar navbar-expand-md navbar-dark bg-navblue nav-shadow fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item pt-2">
-                            <a class="nav-link text-uppercase text-white" href="{{ url('/logout') }}"> LOGOUT</a>
-                        </li>
-                        <li class="nav-item pt-2">
-                            <a class="nav-link text-uppercase text-white" href="/">HOME</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link py-md-0" href="/">HOME</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<button type="button" class="btn btn-outline-info">SIGN IN</button>
+			</ul>
+		</div>
+	</nav>
 
 	<div class="container">
 		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
