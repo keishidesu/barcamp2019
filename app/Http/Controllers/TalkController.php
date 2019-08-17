@@ -58,7 +58,7 @@ class TalkController extends Controller
         // do validation here
         $voteCount = $user -> votes() -> count();
         if($voteCount >= 5 ){
-            return null;
+            return false;
         }
 
 
