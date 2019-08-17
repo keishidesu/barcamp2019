@@ -71,7 +71,7 @@
 						    <p class="card-text">{{ $talk['body'] }}</p>
 						    <hr>
 						    <div class="interaction">
-						    	<a href ="#" class="btn btn-primary vote" style="background-color: rgba(100, 44, 106,0.9); border-color:rgba(100, 44, 106,0.9);"  id="vote" data-vote="{{$talk['vote']}}">Vote</a>
+						    	<a href ="#" class="btn btn-primary vote" style="background-color: rgba(100, 44, 106,0.9); border-color:rgba(100, 44, 106,0.9);"  class="vote" data-vote="{{$talk['vote']}}">Vote</a>
 						    </div>
 						  </div>
 						</div>
@@ -90,10 +90,17 @@ var token = '{{ Session::token() }}';
 var urlVote = '{{ route('vote') }}';
 
 $( document ).ready(function() {
-    vote = $('#vote').data('vote');
-    if (vote == 1) {
-        $('#vote').html('You have voted');
-    }
+	$(".vote").each(function() {
+		let vote = $(this).data('vote')
+	  	if (vote == 1) {
+	        $(this).html('You have voted');
+	    }
+	});
+
+    // vote = $('#vote').data('vote');
+    // if (vote == 1) {
+    //     $('#vote').html('You have voted');
+    // }
 });
 
 </script>
