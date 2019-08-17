@@ -64,13 +64,13 @@
 		</div>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<button type="button" class="btn btn-outline-info">SIGN IN</button>
+				<a href="{{ url('/logout') }}" class="btn btn-outline-light"> logout </a>
 			</ul>
 		</div>
 	</nav>
 
 	<div class="container">
-		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
+		<h3 class="text-white text-center pt-5">PROPOSED TOPICS</h3>
 		<div class="row mt-2 mb-5">
 			<div class="col-12">
 				@foreach ($talks as $talk)
