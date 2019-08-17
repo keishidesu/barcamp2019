@@ -50,18 +50,18 @@
 </style>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark nav-shadow" style="background-color: rgba(100, 44, 106,0.9)">
-		<div class="" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li>
-					<a href="/" class="btn btn-outline-light">HOME</a>
-				</li>
-				<li>
-					<a href="{{ url('/logout') }}" class="btn btn-outline-light">LOGOUT</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link py-md-0" href="/">HOME</a>
+			</li>
+		</ul>
+	</div>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			<a href="{{ url('/logout') }}"> LOG OUT </a>
+		</ul>
+	</div>
 	<div class="container">
 		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
 		<div class="row mt-2 mb-5">
