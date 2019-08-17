@@ -50,18 +50,31 @@
 </style>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark nav-shadow" style="background-color: rgba(100, 44, 106,0.9)">
-		<div class="" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li>
-					<a href="/" class="btn btn-outline-light">HOME</a>
-				</li>
-				<li>
-					<a href="{{ url('/logout') }}" class="btn btn-outline-light">LOGOUT</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: rgba(100, 44, 106,0.9)">
+            <div class="container">
+                <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pt-2">
+                            <a class="nav-link text-uppercase text-white" href="{{ url('/logout') }}"> LOGOUT</a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link text-uppercase text-white" href="/">HOME</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
 	<div class="container">
 		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
 		<div class="row mt-2 mb-5">
