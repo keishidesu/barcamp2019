@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('proposedtalks');
+    return view('talks.index');
 });
 
 Auth::routes();
