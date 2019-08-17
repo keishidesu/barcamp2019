@@ -54,6 +54,14 @@ class TalkController extends Controller
     	}
 
     	$user = Auth::user();
+
+        // do validation here
+        $voteCount = $user -> votes() -> count();
+        if($voteCount >= 5 ){
+            return null;
+        }
+
+
     	$vote = $user -> votes()-> where('talk_id', $talk_id)->first();
     	if ($vote){
     		$already_vote = $vote->vote;
