@@ -19,7 +19,7 @@ $('.vote').on('click', function(event){
 		data: {isVote: isVote, talkId: talkId, _token: token }
 
 	})
-	.done(function(event){
+	.done(function(){
 		event.target.innerText = isVote ? event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' :
 		event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
 
