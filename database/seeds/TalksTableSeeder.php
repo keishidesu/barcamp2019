@@ -18,4 +18,4 @@ class TalksTableSeeder extends Seeder
         ]);
     }
 }
- -->
+ 

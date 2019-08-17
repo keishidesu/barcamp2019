@@ -11,9 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });s
+Route::get('/', function () {
+    return view('proposedtalks');
+});
 
 Auth::routes();
 
