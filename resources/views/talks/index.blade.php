@@ -50,27 +50,17 @@
 </style>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-navblue nav-shadow fixed-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link py-md-0" href="/">HOME</a>
+	<nav class="navbar navbar-expand-md navbar-dark nav-shadow" style="background-color: rgba(100, 44, 106,0.9)">
+		<div class="" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<a href="{{ url('/logout') }}" class="btn btn-outline-light">LOGOUT</a>
 				</li>
 			</ul>
 		</div>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<a href="{{ url('/logout') }}" class="btn btn-outline-light"> logout </a>
-			</ul>
-		</div>
 	</nav>
-
 	<div class="container">
-		<h3 class="text-white text-center pt-5">PROPOSED TOPICS</h3>
+		<h3 class="text-white text-center mt-2">PROPOSED TOPICS</h3>
 		<div class="row mt-2 mb-5">
 			<div class="col-12">
 				@foreach ($talks as $talk)
