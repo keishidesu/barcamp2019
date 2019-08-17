@@ -19,12 +19,7 @@ $('.vote').on('click', function(event){
 		data: {isVote: isVote, talkId: talkId, _token: token }
 
 	})
-	.done(function(res){
-		console.log(res)
-		// ok it is here
-		if (res == false) {
-			console.log("should not change next, show warning ")
-		}
+	.done(function(event){
 		event.target.innerText = isVote ? event.target.innerText == 'Vote' ? 'You voted for this talk' : 'Vote' :
 		event.target.innerText == 'Downvote' ? 'You downvoted this talk' : 'Downvote'; 
 
@@ -35,7 +30,7 @@ $('.vote').on('click', function(event){
 		}
 
 	})
-	.catch(function(err){
+	.fail(function(err){
 		console.log(err);
 	})
 });
